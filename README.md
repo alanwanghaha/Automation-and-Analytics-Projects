@@ -27,7 +27,7 @@ A Tkinter-based PC application for outbound document consolidation. Eliminated o
 # 2. SAP Reports Extraction and Visualization
 
 ## Overview
-A warehouse space utilization dashboard with inbound and outbound status. Data from an automation that trigger .vbs macros for SAP data extractionand sending the reports to corporate network in 15min interval with an annual saving and avoidance higher than S$72,000.
+A warehouse space utilization dashboard with inbound and outbound status. Data from an automation that triggers .vbs macros for SAP data extraction and sending the reports to the corporate network in 15-minute intervals with an annual saving and avoidance higher than S$72,000.
 
 ## Features
 - Trigger 6 separate .vbs SAP GUI Script
@@ -53,7 +53,7 @@ Downstream:
 # 3. SAP Data Entry Automation
 
 ## Overview
-Warehouse admin staff will need to key in shipment information into SAP to print out documents for cargo releasing. These templates is to automate this process to increase accuracy and boost efficiency.
+Warehouse admin staff will need to key in shipment information into SAP to print out documents for cargo releasing. These templates are to automate this process to increase accuracy and boost efficiency.
 
 ## Technologies Used
 - SAP GUI Scripting
@@ -64,10 +64,10 @@ Warehouse admin staff will need to key in shipment information into SAP to print
 # 4. Shipment Forecasting
 
 ## Overview
+The cargo of this customer is split into two categories, main parts and subparts. New orders will only show the main parts. Thus, as their supply chain partner, we will need to estimate the number of subparts to forecast the volume of each shipment. Through analysis, we discovered the number of subparts of each main part is consistent for the same buyer buying the same type of machine. I created an automated data pipeline to capture all shipped-out cargos into a library, and this Python code is to refer to that library and adjusts the number of subparts.
 
+With this automation, we increased the accuracy of the forecast from 80% to 95%, reducing freight and operations costs, and strengthening customer relationships.
 
 ## Technologies Used
-- SAP GUI Scripting
-- VBA
-- Windows API
+- Python Pandas
 
