@@ -1,27 +1,15 @@
 # Automation and Analytics Projects
 
-# 1. Invoice Consolidation Application
+# 1. Shipment Forecasting
 
 ## Overview
-A Tkinter-based PC application for outbound document consolidation. Eliminated operation time by 1 man hour daily.
+The cargo of this customer is split into two categories, main parts and subparts. New orders will only show the main parts. Thus, as their supply chain partner, we will need to estimate the number of subparts to forecast the volume of each shipment. Through analysis, we discovered the number of subparts of each main part is consistent for the same buyer buying the same type of machine. I created an automated data pipeline to capture all shipped-out cargos into a library, and this Python code is to refer to that library and adjusts the number of subparts.
 
-## Features
-- Download attachments from Outlook with the key codes keyed in by User.
-- Extract required information from .txt files under the folder selected by the user into the required format.
-- Data cleaning and consolidating Excel files under the folder selected by the user into one report.
-- .bat created for the user to trigger the application
-- Additonal .bat file for the user to download the required Python environment as a bypass of corporate cyber security restriction.
+With this automation, we increased the accuracy of the forecast from 80% to 95%, reducing freight and operations costs, and strengthening customer relationships.
 
 ## Technologies Used
-- Python
-- Batch File
-- win32com.client
-- pathlib
-- pandas
-- tkinter
-- Pillow
-- openpyxl
-- os
+- Python Pandas
+
 
 
 # 2. SAP Reports Extraction and Visualization
@@ -61,13 +49,27 @@ Warehouse admin staff will need to key in shipment information into SAP to print
 - Windows API
 
 
-# 4. Shipment Forecasting
+
+# 4. Invoice Consolidation Application
 
 ## Overview
-The cargo of this customer is split into two categories, main parts and subparts. New orders will only show the main parts. Thus, as their supply chain partner, we will need to estimate the number of subparts to forecast the volume of each shipment. Through analysis, we discovered the number of subparts of each main part is consistent for the same buyer buying the same type of machine. I created an automated data pipeline to capture all shipped-out cargos into a library, and this Python code is to refer to that library and adjusts the number of subparts.
+A Tkinter-based PC application for outbound document consolidation. Eliminated operation time by 1 man hour daily.
 
-With this automation, we increased the accuracy of the forecast from 80% to 95%, reducing freight and operations costs, and strengthening customer relationships.
+## Features
+- Download attachments from Outlook with the key codes keyed in by User.
+- Extract required information from .txt files under the folder selected by the user into the required format.
+- Data cleaning and consolidating Excel files under the folder selected by the user into one report.
+- .bat created for the user to trigger the application
+- Additonal .bat file for the user to download the required Python environment as a bypass of corporate cyber security restriction.
 
 ## Technologies Used
-- Python Pandas
+- Python
+- Batch File
+- win32com.client
+- pathlib
+- pandas
+- tkinter
+- Pillow
+- openpyxl
+- os
 
